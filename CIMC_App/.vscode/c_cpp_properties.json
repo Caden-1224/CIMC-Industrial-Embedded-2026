@@ -1,0 +1,34 @@
+{
+    "configurations":  [
+                           {
+                               "name":  "GD32F470",
+                               "includePath":  [
+                                                   "${workspaceFolder}/**",
+                                                   "${workspaceFolder}/CMSIS",
+                                                   "${workspaceFolder}/CMSIS/GD/GD32F4xx/Include",
+                                                   "${workspaceFolder}/Library/GD32F4xx_standard_peripheral/Include",
+                                                   "${workspaceFolder}/Driver/LED",
+                                                   "${workspaceFolder}/Driver/KEY",
+                                                   "${workspaceFolder}/Driver/USART",
+                                                   "${workspaceFolder}/Driver/ADC",
+                                                   "${workspaceFolder}/Driver/GD30AD3344",
+                                                   "${workspaceFolder}/Driver/TIMER",
+                                                   "${workspaceFolder}/Driver/RTC",
+                                                   "${workspaceFolder}/Driver/RS485",
+                                                   "${workspaceFolder}/Function",
+                                                   "${workspaceFolder}/Protocol",
+                                                   "${workspaceFolder}/HeaderFiles",
+                                                   "${workspaceFolder}/User"
+                                               ],
+                               "defines":  [
+                                               "USE_STDPERIPH_DRIVER",
+                                               "GD32F470",
+                                               "__CC_ARM",
+                                               "__arm__"
+                                           ],
+                               "cStandard":  "c11",
+                               "intelliSenseMode":  "gcc-arm"
+                           }
+                       ],
+    "version":  4
+}

@@ -1,0 +1,284 @@
+version: "4.1"
+name: CIMC_GD32_Template
+type: ARM
+deviceName: null
+packDir: .pack/GigaDevice/GD32F4xx_DFP.2.0.0
+srcDirs: []
+virtualFolder:
+  name: <virtual_root>
+  files: []
+  folders:
+    - name: User
+      files:
+        - path: ../../User/gd32f4xx_it.c
+        - path: ../../User/main.c
+        - path: ../../User/systick.c
+      folders: []
+    - name: Driver
+      files:
+        - path: ../../Driver/LED/LED.c
+        - path: ../../Driver/LED/LED.h
+        - path: ../../Driver/KEY/KEY.c
+        - path: ../../Driver/KEY/KEY.h
+        - path: ../../Driver/USART/USART.c
+        - path: ../../Driver/USART/USART.h
+        - path: ../../Driver/USART/usart_dma.c
+        - path: ../../Driver/USART/usart_dma.h
+        - path: ../../Driver/USART/usart_idle.c
+        - path: ../../Driver/USART/usart_idle.h
+        - path: ../../Driver/ADC/ADC.c
+        - path: ../../Driver/ADC/ADC.h
+        - path: ../../Driver/TIMER/TIMER_BASIC.c
+        - path: ../../Driver/TIMER/TIMER_BASIC.h
+        - path: ../../Driver/TIMER/TIMER_PWM.c
+        - path: ../../Driver/TIMER/TIMER_PWM.h
+        - path: ../../Driver/OLED_IIC/OLED_IIC.c
+        - path: ../../Driver/OLED_IIC/OLED_IIC.h
+        - path: ../../Driver/SPI_FLASH/SPI_FLASH.c
+        - path: ../../Driver/SPI_FLASH/SPI_FLASH.h
+        - path: ../../Driver/BootConfig/BootConfig.h
+        - path: ../../Driver/BootConfig/BootConfig.c
+        - path: ../../Driver/InternalFlash/InternalFlash.h
+        - path: ../../Driver/InternalFlash/InternalFlash.c
+        - path: ../../Driver/GD30AD3344/GD30AD3344.c
+        - path: ../../Driver/GD30AD3344/GD30AD3344.h
+      folders: []
+    - name: Protocol
+      files:
+        - path: ../../Protocol/ota_protocol.h
+      folders: []
+    - name: Function
+      files:
+        - path: ../../Function/Function.c
+        - path: ../../Function/Function.h
+        - path: ../../Function/Led_service.c
+        - path: ../../Function/Led_service.h
+        - path: ../../Function/Key_service.c
+        - path: ../../Function/Key_service.h
+        - path: ../../Function/Usart_service.c
+        - path: ../../Function/Usart_service.h
+        - path: ../../Function/Adc_service.c
+        - path: ../../Function/Adc_service.h
+        - path: ../../Function/Gd30ad3344_service.c
+        - path: ../../Function/Gd30ad3344_service.h
+        - path: ../../Function/Oled_service.c
+        - path: ../../Function/Oled_service.h
+        - path: ../../Function/Spi_flash_service.c
+        - path: ../../Function/Spi_flash_service.h
+        - path: ../../Function/BootUpdate_service.h
+        - path: ../../Function/BootUpdate_service.c
+      folders: []
+    - name: HeaderFiles
+      files:
+        - path: ../../HeaderFiles/HeaderFiles.h
+      folders: []
+    - name: Delay
+      files: []
+      folders: []
+    - name: System
+      files: []
+      folders: []
+    - name: CMSIS
+      files:
+        - path: ../../CMSIS/GD/GD32F4xx/Source/system_gd32f4xx.c
+      folders: []
+    - name: Library
+      files:
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_adc.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_can.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_crc.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_ctc.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_dac.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_dbg.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_dci.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_dma.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_enet.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_exmc.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_exti.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_fmc.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_fwdgt.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_gpio.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_i2c.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_ipa.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_iref.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_misc.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_pmu.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_rcu.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_rtc.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_sdio.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_spi.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_syscfg.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_timer.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_tli.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_trng.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_usart.c
+        - path: ../../Library/GD32F4xx_standard_peripheral/Source/gd32f4xx_wwdgt.c
+      folders: []
+    - name: Startup
+      files:
+        - path: ../../CMSIS/GD/GD32F4xx/Source/ARM/startup_gd32f450_470.s
+      folders: []
+    - name: Readme
+      files: []
+      folders: []
+    - name: ::CMSIS
+      files: []
+      folders: []
+dependenceList: []
+outDir: build
+miscInfo:
+  uid: 1adee5b7d40bf4e3aad3b65729bcc57a
+targets:
+  CIMC_GD32_Template:
+    cppPreprocessAttrs:
+      defineList:
+        - USE_STDPERIPH_DRIVER
+        - GD32F470
+      incList:
+        - .
+        - ../../CMSIS
+        - ../../Startup
+        - ../../Library/GD32F4xx_standard_peripheral/Include
+        - ../../User
+        - ../../CMSIS/GD/GD32F4xx/Include
+        - ../../HeaderFiles
+        - ../../Function
+        - ../../Protocol
+        - ../../Driver/LED
+        - ../../Driver/KEY
+        - ../../Driver/USART
+        - ../../Driver/ADC
+        - ../../Driver/GD30AD3344
+        - ../../Driver/TIMER
+        - ../../Driver/SPI_FLASH
+        - ../../Driver/BootConfig
+        - ../../Driver/InternalFlash
+        - .cmsis/include
+        - ../RTE/_CIMC_GD32_Template
+      libList: []
+    excludeList: []
+    settings: {}
+    toolchain: AC5
+    toolchainConfigMap:
+      AC5:
+        archExtensions: ""
+        cpuType: Cortex-M4
+        floatingPointHardware: single
+        options:
+          version: 4
+          afterBuildTasks: []
+          asm-compiler:
+            defines: []
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            CXX_FLAGS: --diag_suppress=1 --diag_suppress=1295
+            C_FLAGS: --diag_suppress=1 --diag_suppress=1295
+            c99-mode: true
+            gnu-extensions: true
+            one-elf-section-per-function: true
+            optimization: level-0
+            warnings: all-warnings
+          global:
+            output-debug-info: enable
+            use-microLIB: true
+          linker:
+            $disableOutputTask: false
+            $outputTaskExcludes:
+              - .bin
+              - .s19
+            output-format: bin
+            ro-base: "0x0800D000"
+            rw-base: "0x20000000"
+            xo-base: ""
+        scatterFilePath: ""
+        storageLayout:
+          RAM:
+            - id: 1
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 2
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 3
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 1
+              isChecked: true
+              mem:
+                size: "0x30000"
+                startAddr: "0x20000000"
+              noInit: false
+              tag: IRAM
+            - id: 2
+              isChecked: false
+              mem:
+                size: "0x10000"
+                startAddr: "0x10000000"
+              noInit: false
+              tag: IRAM
+          ROM:
+            - id: 1
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 3
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 1
+              isChecked: true
+              isStartup: true
+              mem:
+                size: "0x13000"
+                startAddr: "0x8000000"
+              tag: IROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: IROM
+        useCustomScatterFile: false
+    uploadConfigMap:
+      JLink:
+        baseAddr: ""
+        bin: ""
+        cpuInfo:
+          cpuName: "null"
+          vendor: "null"
+        otherCmds: ""
+        proType: 1
+        speed: 8000
+      OpenOCD:
+        baseAddr: "0x08000000"
+        bin: ""
+        interface: cmsis-dap
+        target: stm32f4x
+    uploader: OpenOCD
+

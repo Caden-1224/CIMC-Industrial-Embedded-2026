@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="950" viewBox="0 0 1240 950" role="img" aria-label="系统架构与数据链路" font-family="Segoe UI, Noto Sans SC, PingFang SC, Microsoft YaHei, Arial, sans-serif">
+<defs>
+<linearGradient id="mcuGrad" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#171d26"/><stop offset="1" stop-color="#11161e"/></linearGradient>
+<pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="1.2" cy="1.2" r="0.9" fill="#26313d" opacity="0.55"/></pattern>
+<marker id="ar-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6e7f92"/></marker>
+<marker id="ar-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b9bf0"/></marker>
+<marker id="ar-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3fb9a8"/></marker>
+<marker id="ar-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a98bf0"/></marker>
+</defs>
+<rect x="0.5" y="0.5" width="1239" height="949" rx="18" fill="#0d1117" stroke="#30363d"/>
+<rect x="0.5" y="0.5" width="1239" height="949" rx="18" fill="url(#grid)" opacity="0.35"/>
+<text x="48" y="48" font-size="23" fill="#e6edf3" text-anchor="start" font-weight="600">系统架构与数据链路</text>
+<text x="48" y="74" font-size="13" fill="#96a3b3" text-anchor="start" font-weight="normal">上位机经 RS485 下发命令与固件；三条采集链路收敛到同一个协议出口</text>
+<text x="1192" y="48" font-size="12.5" fill="#96a3b3" text-anchor="end" font-weight="normal">GD32F470VE · App + BootLoader 双工程</text>
+<line x1="48" y1="92" x2="1192" y2="92" stroke="#30363d"/>
+<rect x="48" y="112" width="292" height="112" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.4"/>
+<text x="68" y="144" font-size="16" fill="#e6edf3" text-anchor="start" font-weight="600">上位机</text>
+<text x="68" y="172" font-size="12" fill="#96a3b3" text-anchor="start" font-weight="normal">RS485 主站：ASCII-Hex 命令帧</text>
+<text x="68" y="194" font-size="12" fill="#96a3b3" text-anchor="start" font-weight="normal">固件下发与安装流程校验</text>
+<line x1="344" y1="168" x2="396" y2="168" stroke="#6e7f92" stroke-width="1.6" marker-end="url(#ar-blue)"/>
+<line x1="396" y1="168" x2="344" y2="168" stroke="#6e7f92" stroke-width="1.6" marker-end="url(#ar-blue)"/>
+<text x="370" y="158" font-size="10.5" fill="#5b9bf0" text-anchor="middle" font-weight="normal">RS485</text>
+<rect x="400" y="112" width="792" height="468" rx="14" fill="url(#mcuGrad)" stroke="#30363d" stroke-width="1.4"/>
+<text x="424" y="146" font-size="15" fill="#e6edf3" text-anchor="start" font-weight="600">GD32F470VE　Cortex-M4 · 512 KB Flash / 256 KB SRAM</text>
+<text x="424" y="176" font-size="11" fill="#96a3b3" text-anchor="start" font-weight="normal">Flash 分区（0x08000000 起）</text>
+<rect x="424" y="186" width="98" height="44" rx="7" fill="#17263c" stroke="#5b9bf0" stroke-width="1.2"/>
+<text x="473.0" y="205" font-size="10.5" fill="#e6edf3" text-anchor="middle" font-weight="600">BootLoader</text>
+<text x="473.0" y="220" font-size="9.5" fill="#96a3b3" text-anchor="middle" font-weight="normal">64 KB</text>
+<rect x="524" y="186" width="62" height="44" rx="7" fill="#33290d" stroke="#d9a343" stroke-width="1.2"/>
+<text x="555.0" y="205" font-size="10.5" fill="#e6edf3" text-anchor="middle" font-weight="600">参数</text>
+<text x="555.0" y="220" font-size="9.5" fill="#96a3b3" text-anchor="middle" font-weight="normal">4 KB</text>
+<rect x="588" y="186" width="194" height="44" rx="7" fill="#12301c" stroke="#57b871" stroke-width="1.2"/>
+<text x="685.0" y="205" font-size="10.5" fill="#e6edf3" text-anchor="middle" font-weight="600">APP1</text>
+<text x="685.0" y="220" font-size="9.5" fill="#96a3b3" text-anchor="middle" font-weight="normal">128 KB</text>
+<rect x="784" y="186" width="194" height="44" rx="7" fill="#1c2128" stroke="#8ba0b8" stroke-width="1.2"/>
+<text x="881.0" y="205" font-size="10.5" fill="#e6edf3" text-anchor="middle" font-weight="600">备份</text>
+<text x="881.0" y="220" font-size="9.5" fill="#96a3b3" text-anchor="middle" font-weight="normal">128 KB</text>
+<rect x="980" y="186" width="196" height="44" rx="7" fill="#241f38" stroke="#a98bf0" stroke-width="1.2"/>
+<text x="1078.0" y="205" font-size="10.5" fill="#e6edf3" text-anchor="middle" font-weight="600">下载暂存</text>
+<text x="1078.0" y="220" font-size="9.5" fill="#96a3b3" text-anchor="middle" font-weight="normal">128 KB</text>
+<rect x="424" y="250" width="276" height="306" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.4"/>
+<text x="444" y="278" font-size="12.5" fill="#e6edf3" text-anchor="start" font-weight="600">BootLoader（0x08000000，64 KB）</text>
+<circle cx="450" cy="302" r="2.6" fill="#5b9bf0"/>
+<text x="462" y="306" font-size="11.5" fill="#e6edf3" text-anchor="start" font-weight="normal">启动决策：参数主备与完整性校验</text>
+<circle cx="450" cy="332" r="2.6" fill="#5b9bf0"/>
+<text x="462" y="336" font-size="11.5" fill="#e6edf3" text-anchor="start" font-weight="normal">官方固件流接收（USART1 / RS485）</text>
+<circle cx="450" cy="362" r="2.6" fill="#5b9bf0"/>
+<text x="462" y="366" font-size="11.5" fill="#e6edf3" text-anchor="start" font-weight="normal">备份 → 安装 → CRC32 复核</text>
+<circle cx="450" cy="392" r="2.6" fill="#5b9bf0"/>
+<text x="462" y="396" font-size="11.5" fill="#e6edf3" text-anchor="start" font-weight="normal">失败回滚 · APP 向量表校验</text>
+<circle cx="450" cy="422" r="2.6" fill="#5b9bf0"/>
+<text x="462" y="426" font-size="11.5" fill="#e6edf3" text-anchor="start" font-weight="normal">释放串口资源后 SCB-&gt;VTOR 跳转</text>
+<text x="444" y="526" font-size="10" fill="#96a3b3" text-anchor="start" font-weight="normal">（APP 与 BootLoader 分区相邻性带编译期断言）</text>
+<rect x="716" y="250" width="244" height="306" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.4"/>
+<text x="736" y="278" font-size="12.5" fill="#e6edf3" text-anchor="start" font-weight="600">App（0x08011000，128 KB）</text>
+<text x="736" y="298" font-size="10.5" fill="#96a3b3" text-anchor="start" font-weight="normal">协作式时间片轮询，无 RTOS</text>
+<rect x="736" y="314" width="204" height="38" rx="8" fill="#16273d" stroke="#30363d" stroke-width="1"/>
+<text x="750" y="338" font-size="12.5" fill="#5b9bf0" text-anchor="start" font-weight="600">User</text>
+<text x="930" y="338" font-size="10.5" fill="#96a3b3" text-anchor="end" font-weight="normal">启动与中断向量</text>
+<rect x="736" y="360" width="204" height="38" rx="8" fill="#16273d" stroke="#30363d" stroke-width="1"/>
+<text x="750" y="384" font-size="12.5" fill="#5b9bf0" text-anchor="start" font-weight="600">Function</text>
+<text x="930" y="384" font-size="10.5" fill="#96a3b3" text-anchor="end" font-weight="normal">业务服务</text>
+<rect x="736" y="406" width="204" height="38" rx="8" fill="#16273d" stroke="#30363d" stroke-width="1"/>
+<text x="750" y="430" font-size="12.5" fill="#5b9bf0" text-anchor="start" font-weight="600">Protocol</text>
+<text x="930" y="430" font-size="10.5" fill="#96a3b3" text-anchor="end" font-weight="normal">帧编解码 / CRC</text>
+<rect x="736" y="452" width="204" height="38" rx="8" fill="#16273d" stroke="#30363d" stroke-width="1"/>
+<text x="750" y="476" font-size="12.5" fill="#5b9bf0" text-anchor="start" font-weight="600">Driver</text>
+<text x="930" y="476" font-size="10.5" fill="#96a3b3" text-anchor="end" font-weight="normal">外设驱动</text>
+<rect x="736" y="496" width="204" height="26" rx="8" fill="none" stroke="#30363d" stroke-dasharray="5 4"/>
+<text x="838" y="513" font-size="10" fill="#96a3b3" text-anchor="middle" font-weight="normal">common/</text>
+<text x="838" y="542" font-size="9.5" fill="#96a3b3" text-anchor="middle" font-weight="normal">Flash 分区与参数布局，两工程共享</text>
+<rect x="976" y="250" width="216" height="306" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.4"/>
+<text x="996" y="278" font-size="12.5" fill="#e6edf3" text-anchor="start" font-weight="600">片上外设与服务</text>
+<text x="996" y="306" font-size="11.5" fill="#e6edf3" text-anchor="start" font-weight="normal">ADC　CH0 / CH1</text>
+<text x="996" y="336" font-size="11.5" fill="#e6edf3" text-anchor="start" font-weight="normal">DAC　CH1 回读</text>
+<text x="996" y="366" font-size="11.5" fill="#e6edf3" text-anchor="start" font-weight="normal">GD30AD3344　SPI + DMA</text>
+<text x="996" y="396" font-size="11.5" fill="#e6edf3" text-anchor="start" font-weight="normal">RS485　USART1 + DMA</text>
+<text x="996" y="426" font-size="11.5" fill="#e6edf3" text-anchor="start" font-weight="normal">InternalFlash / SPI Flash</text>
+<text x="996" y="456" font-size="11.5" fill="#e6edf3" text-anchor="start" font-weight="normal">OLED · RTC · TIMER</text>
+<text x="996" y="486" font-size="11.5" fill="#e6edf3" text-anchor="start" font-weight="normal">KEY · LED · 睡眠唤醒</text>
+<line x1="996" y1="508" x2="1172" y2="508" stroke="#30363d"/>
+<text x="996" y="536" font-size="10.5" fill="#3fb9a8" text-anchor="start" font-weight="normal">三条链路统一出口 →</text>
+<text x="48" y="606" font-size="14" fill="#e6edf3" text-anchor="start" font-weight="600">现场板卡（自绘）</text>
+<rect x="48" y="622" width="348" height="118" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.4"/>
+<rect x="48" y="622" width="4" height="118" rx="2" fill="#d9a343"/>
+<text x="70" y="652" font-size="13.5" fill="#e6edf3" text-anchor="start" font-weight="600">系统供电电源板</text>
+<text x="70" y="678" font-size="11.5" fill="#96a3b3" text-anchor="start" font-weight="normal">18–36 V → 5 V</text>
+<text x="70" y="700" font-size="11.5" fill="#96a3b3" text-anchor="start" font-weight="normal">P-MOS 防反接 · GD30DC1354</text>
+<text x="70" y="722" font-size="11.5" fill="#96a3b3" text-anchor="start" font-weight="normal">15 µH · 输入 TVS · 多级滤波</text>
+<rect x="446" y="622" width="348" height="118" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.4"/>
+<rect x="446" y="622" width="4" height="118" rx="2" fill="#3fb9a8"/>
+<text x="468" y="652" font-size="13.5" fill="#e6edf3" text-anchor="start" font-weight="600">PT100 温度采样板</text>
+<text x="468" y="678" font-size="11.5" fill="#96a3b3" text-anchor="start" font-weight="normal">约 1 mA 恒流激励</text>
+<text x="468" y="700" font-size="11.5" fill="#96a3b3" text-anchor="start" font-weight="normal">INA333 放大 10 倍 · RC 滤波</text>
+<text x="468" y="722" font-size="11.5" fill="#96a3b3" text-anchor="start" font-weight="normal">2.048 V 基准 · AD3344（SPI）</text>
+<rect x="844" y="622" width="348" height="118" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.4"/>
+<rect x="844" y="622" width="4" height="118" rx="2" fill="#a98bf0"/>
+<text x="866" y="652" font-size="13.5" fill="#e6edf3" text-anchor="start" font-weight="600">精密电阻模拟测试板</text>
+<text x="866" y="678" font-size="11.5" fill="#96a3b3" text-anchor="start" font-weight="normal">12 档 0.1% 金属膜电阻</text>
+<text x="866" y="700" font-size="11.5" fill="#96a3b3" text-anchor="start" font-weight="normal">−49.27 ℃ … 141.11 ℃</text>
+<text x="866" y="722" font-size="11.5" fill="#96a3b3" text-anchor="start" font-weight="normal">经三线 I+/I−/COMP 接入采样板</text>
+<path d="M 222 622 L 222 598 L 500 598 L 500 582" fill="none" stroke="#d9a343" stroke-width="1.6" stroke-dasharray="6 5" marker-end="url(#ar-arrow)"/>
+<text x="232" y="592" font-size="10.5" fill="#d9a343" text-anchor="start" font-weight="normal">5 V 供电</text>
+<path d="M 620 622 L 620 582" fill="none" stroke="#3fb9a8" stroke-width="1.6" marker-end="url(#ar-arrow)"/>
+<text x="630" y="600" font-size="10.5" fill="#3fb9a8" text-anchor="start" font-weight="normal">SPI · 调理电压</text>
+<text x="48" y="786" font-size="14" fill="#e6edf3" text-anchor="start" font-weight="600">三通道数据链</text>
+<rect x="48" y="800" width="152" height="74" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.4"/>
+<text x="64" y="828" font-size="12.5" fill="#e6edf3" text-anchor="start" font-weight="600">CH0 电位器</text>
+<text x="64" y="852" font-size="10.5" fill="#96a3b3" text-anchor="start" font-weight="normal">内部 12 位 ADC</text>
+<line x1="200" y1="837" x2="566" y2="837" stroke="#6e7f92" stroke-width="1.3"/>
+<rect x="216" y="800" width="152" height="74" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.4"/>
+<text x="232" y="828" font-size="12.5" fill="#e6edf3" text-anchor="start" font-weight="600">CH1 DAC 回读</text>
+<text x="232" y="852" font-size="10.5" fill="#96a3b3" text-anchor="start" font-weight="normal">内部 12 位 ADC</text>
+<line x1="368" y1="837" x2="566" y2="837" stroke="#6e7f92" stroke-width="1.3"/>
+<rect x="384" y="800" width="152" height="74" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.4"/>
+<text x="400" y="828" font-size="12.5" fill="#e6edf3" text-anchor="start" font-weight="600">CH2 PT100</text>
+<text x="400" y="852" font-size="10.5" fill="#96a3b3" text-anchor="start" font-weight="normal">GD30AD3344 · SPI/DMA</text>
+<line x1="536" y1="837" x2="566" y2="837" stroke="#6e7f92" stroke-width="1.3"/>
+<line x1="566" y1="837" x2="596" y2="837" stroke="#5b9bf0" stroke-width="1.6" marker-end="url(#ar-blue)"/>
+<rect x="600" y="800" width="320" height="74" rx="12" fill="#16273d" stroke="#5b9bf0" stroke-width="1.6"/>
+<text x="620" y="828" font-size="13.5" fill="#5b9bf0" text-anchor="start" font-weight="600">统一协议出口</text>
+<text x="620" y="850" font-size="10.5" fill="#e6edf3" text-anchor="start" font-weight="normal">单位 · 变比 · IEEE754 大端</text>
+<text x="620" y="866" font-size="10.5" fill="#96a3b3" text-anchor="start" font-weight="normal">单次查询与自动上报共用同一份换算</text>
+<rect x="940" y="800" width="252" height="34" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.4"/>
+<text x="956" y="822" font-size="11.5" fill="#e6edf3" text-anchor="start" font-weight="normal">单次查询应答</text>
+<rect x="940" y="840" width="252" height="34" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.4"/>
+<text x="956" y="862" font-size="11.5" fill="#e6edf3" text-anchor="start" font-weight="normal">定时自动上报（CH0 / CH1）</text>
+<line x1="920" y1="817" x2="936" y2="817" stroke="#5b9bf0" stroke-width="1.6" marker-end="url(#ar-blue)"/>
+<line x1="920" y1="857" x2="936" y2="857" stroke="#5b9bf0" stroke-width="1.6" marker-end="url(#ar-blue)"/>
+<text x="48" y="918" font-size="10.5" fill="#96a3b3" text-anchor="start" font-weight="normal">完整分区表、29 条命令表与两条升级路径状态机见 docs/architecture.md · docs/protocol.md · docs/ota.md</text>
+</svg>
